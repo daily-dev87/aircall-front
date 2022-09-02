@@ -1,0 +1,136 @@
+#app {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#app .container {
+    width: 376px;
+    height: 666px;
+    z-index: 100;
+
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+}
+
+#app .container-view {
+    padding: 20px;
+}
+
+#app .container-view .activity-view {
+    padding: 12px 0 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.activity-view img{
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    float: right;
+}
+
+.activity-view .info-view {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.activity-view .number-view {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.activity-view .number-view span {
+    padding-bottom: 6px;
+    font-size: 13px;
+}
+
+.activity-view .number-view span.caller{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.activity-view .number-view span:last-child {
+    padding-bottom: 0px;
+}
+
+.activity-view .number-view .call-view {
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-view .number-view .non-received-badge {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: #fb2e2e;
+    color: #fff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.activity-view .time-view{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time-part {
+
+}
+
+.day-part {
+    border: 1px solid #ccc;
+    border-right: none;
+    margin-left: 8px;
+}
+
+.detail-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-row {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4px;
+}
+
+.view-subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+.view-row .view-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.view-row .view-time div{
+    padding-right: 20px;
+}
+
+.reset-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reset-container button{
+    padding: 5px 8px;
+}
